@@ -11,7 +11,8 @@
     <body>
         <div class="page-header">
             {% if user.is_authenticated %}
-                <a href="{% url 'post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
+                <a href="{% url 'post_new' %}" class="top-menu" title="Add new post"><span class="glyphicon glyphicon-plus"></span></a>
+                <a href="{% url 'post_draft_list' %}" class="top-menu" title="Edit unpublished posts"><span class="glyphicon glyphicon-edit"></span></a>
             {% endif %}
             <h1><a href="/">Blog Pelora</a><h1>
         </div>
