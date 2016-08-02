@@ -1,6 +1,7 @@
 from django.db import models
 from django.utils import timezone
 
+#from django.contrib.auth.models import User
 
 
 class Post(models.Model):
@@ -34,3 +35,14 @@ class Comment(models.Model):
 
     def __str__(self):
         return self.text
+
+
+class AboutMe(models.Model):
+    #owner = models.ForeignKey(User, related_name='bloggers')
+    first_name = models.CharField(max_length=50)
+    nickname = models.CharField(max_length=200)
+    age = models.IntegerField()
+    interests_hobbies = models.TextField()
+
+    def __str__(self):
+        return self.nickname

@@ -12,3 +12,32 @@
         </div>
     {% endfor %}
 {% endblock content %}
+
+{% block right_column_content %}
+    <div class="about_me">
+        <table class="table_about_me">
+            <caption><h1>Something about authors</h1></caption>
+            {% for blogger in bloggers %}
+                <tr>
+                    <td>First name</td>
+                    <td>{{ blogger.first_name }}</td>
+                </tr>
+                <tr>
+                    <td>Nickname</td>
+                    <td>{{ blogger.nickname }}</td>
+                </tr>
+                <tr>
+                    <td>Age</td>
+                    <td>{{ blogger.age }}</td>
+                </tr>
+                <tr>
+                    <td>Interests and hobbies</td>
+                    <td>{{ blogger.interests_hobbies|linebreaksbr }}</td>
+                </tr>
+                <tr id="tr_span">
+                    <td colspan="2"></td>
+                </tr>
+            {% endfor %}
+        </table>
+    </div>
+{% endblock right_column_content %}

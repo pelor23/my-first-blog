@@ -1,0 +1,16 @@
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    /* First line under this contains fixed height */
+    height: 120px;
+    background-color: #AFF099;
+    }
+
+
+.text-muted {
+    margin-left: 40px;
+    margin-top: 50px;
+    margin-right: 20px;
+    float: left;
+    }

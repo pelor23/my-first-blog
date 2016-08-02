@@ -1,7 +1,8 @@
 .page-header {
-    background-color: #ff9400;
+    background-color: #47B522;
     margin-top: 0;
     padding: 20px 20px 20px 40px;
+    width: 100%;
     }
 
 
@@ -13,7 +14,7 @@
 
 
 .content {
-    margin-left: 40px;
+    width: 100%;
     }
 
 
@@ -75,7 +76,7 @@ h1, h2, h3, h4 {
 
 
 .page-header p {
-    color: blue;
+    color: #D42424;
     }
 
 
@@ -85,10 +86,66 @@ h1, h2, h3, h4 {
 
 
 #logout {
-    color: blue;
+    color: #D42424;
     }
 
 
 .comment {
     margin: 20px 0px 20px 20px;
+    }
+
+
+html {
+    position: relative;
+    min-height: 100%;
+    width: 100%;
+    }
+
+
+body {
+    margin-bottom: 60px;
+    width: 100%;
+    }
+
+
+.left-column {
+    padding: 0 0 0 40px;
+    width: 65%;
+    float: left;
+    }
+
+
+.row {
+    width: 100%;
+    }
+
+
+.right-column {
+    padding: 0 20px 0 10px;
+    width: 35%;
+    float: right;
+    }
+
+
+.table_about_me {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    }
+
+
+.table_about_me td {
+    border: 5px solid #AFF099;
+    text-align: left;
+    padding: 8px;
+    }
+
+
+.table_about_me td:nth-child(odd) {
+    background-color: #AFF099;
+    }
+
+
+#tr_span td {
+    text-align: center;
     }
