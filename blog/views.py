@@ -92,3 +92,9 @@ def comment_remove(request, pk):
     post_pk = comment.post.pk
     comment.delete()
     return redirect('blog.views.post_detail', pk=post_pk)
+
+
+def about_me(request):
+    bloggers = AboutMe.objects.order_by('first_name')
+    return render(request, 'blog/about_me.html', {'bloggers': bloggers})
+

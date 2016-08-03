@@ -1,0 +1,30 @@
+{% extends 'blog/base.html' %}
+{% load staticfiles %}
+
+{% block content %}
+    <div class="info">
+        {% for blogger in bloggers %}
+            <div class="main_information">
+                <table class="table_info_about_me">
+                    <caption><h2>Few pieces of information about {{ blogger.first_name }}</h2></caption>
+                    <tr>
+                        <td>My name is</td>
+                        <td>My age</td>
+                        <td>You know me as</td>
+                        <td>I love</td>
+                    </tr>
+                    <tr>
+                        <td>{{ blogger.first_name }}</td>
+                        <td>{{ blogger.age }}</td>
+                        <td>{{blogger.nickname}}</td>
+                        <td>{{blogger.interests_hobbies}}</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="body_information">
+                <h3>{{ blogger.first_name }}'s description</h3>
+                <p><img class="photo_me" src="{% static 'images/face1.jpg' %}" />{{ blogger.description }}</p>
+            </div>
+        {% endfor %}
+    </div>
+{% endblock content %}

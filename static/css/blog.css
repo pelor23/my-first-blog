@@ -47,7 +47,7 @@ h1, h2, h3, h4 {
     }
 
 
-.post {
+.post, .info {
     margin-bottom: 70px;
     }
 
@@ -127,7 +127,7 @@ body {
     }
 
 
-.table_about_me {
+.table_about_me, .table_info_about_me {
     font-family: arial, sans-serif;
     border-collapse: collapse;
     width: 100%;
@@ -148,4 +148,25 @@ body {
 
 #tr_span td {
     text-align: center;
+    }
+
+
+.table_info_about_me td {
+    border: 5px solid black;
+    text-align: center;
+    padding: 8px;
+    }
+
+
+.table_info_about_me tr:nth-child(odd) {
+    background-color: #6B6D6E;
+    color: white;
+    font-weight: bold;
+    }
+
+
+.photo_me {
+    border-radius: 94px 94px 94px 94px;
+    float: left;
+    margin: 6px;
     }

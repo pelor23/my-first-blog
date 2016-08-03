@@ -110,3 +110,6 @@ STATICFILES_DIRS = (
 
 #login
 LOGIN_REDIRECT_URL = '/'
+
+#media
+MEDIA_ROOT = os.path.join(BASE_DIR, 'static', 'images')
